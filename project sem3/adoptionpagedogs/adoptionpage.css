@@ -1,0 +1,112 @@
+.a{
+    width: 240px;
+    height: 315px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    
+  }
+.h1{
+    margin-left: 18px;
+    margin-right: 10px;
+}
+
+.button4{
+    color:rgb(161, 108, 42);
+    padding: 12px;
+    font-size:3vh;
+    
+    border: none;
+    background-color:white;
+    
+}
+.button4:hover{
+    background-color: rgb(212, 158, 93);
+   color:white;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+  }
+  
+  .box{
+    width: 270px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform .2s;
+    
+   margin: 0px 17px 20px 17px;
+  }
+.box{.img{
+    padding: 1px;
+    border-bottom-left-radius: 20px;
+}}
+
+.box:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+  .newslett{
+    background-image: linear-gradient(to bottom, rgba(35, 33, 33, 0.995) 2%, rgba(219, 219, 224, 0.201)), url("https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/pet-20.jpg");
+
+    height: 550px;
+    padding:40px;
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100% 30%;
+    border-bottom-right-radius: 1% 1%;
+    background-position:center;
+    
+    
+  }
+  .button5{
+    background-color: rgb(212, 146, 66);
+    border-radius: 40px;
+    color: aliceblue;
+    padding: 18px;
+    font-size:3vh;
+    width:440px;
+    border: none;
+    opacity: 0.8;
+    
+}
+.button5:hover{
+background-color: rgb(173, 113, 40);
+border-color: rgb(173, 113, 40);
+}
+
+input[type="text"]{
+	
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #898787;
+    opacity: 0.7;
+}
+
+input[type=text]{ 
+	width:440px;
+    border-radius:40px;
+}
+@media only screen and (max-width:580px) {
+  body{
+      background-color: #c7c5c5;
+  }}
+  @media only screen and (max-width:680px) {
+    body{
+        background-color: #e1b8ea;
+    }}

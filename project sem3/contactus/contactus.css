@@ -1,0 +1,169 @@
+.aboutus{
+    background-image: url("https://www.ingridkuhn.com/themes/woof!/img/jumbotron.jpg");
+    height: 250px;
+    margin-top:92px;
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+}
+       
+.formerror {
+    color: red;
+}
+
+.button1{
+    background-color: rgb(212, 146, 66);
+    border-radius: 40px;
+    color: aliceblue;
+    padding: 20px;
+    font-size:3vh;
+    width:232px;
+    border: none;
+    opacity: 0.92;
+    
+}
+.button1:hover{
+background-color: rgb(173, 113, 40);
+border-color: rgb(173, 113, 40);
+}
+.button2{
+border: none;
+background-color: rgb(128, 125, 125);
+border-radius:40px;
+color: aliceblue;
+padding: 20px;
+font-size:3vh;
+width:232px;
+opacity: 0.85;
+}
+.button2:hover{
+background-color: rgb(212, 146, 66);
+border-color: rgb(212, 146, 66);
+opacity: 0.9;
+}
+
+
+input[type="text"],input[type="email"], input[type=tel] {
+        width: 250px;
+        padding: 12px;
+        margin: 10px 0 ;
+        border: 1px solid rgb(212, 146, 66);
+        border-radius:40%;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+    }
+    
+    textarea {
+       
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        height: 100px;
+    }
+    .volun11{
+        width: 400px;
+        height: 332px;
+        text-align: left;
+        background-color: rgb(212, 158, 93);
+        color: aliceblue;
+        padding: 20px;
+        padding-top: 30px;
+        margin-bottom: 84px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       margin-right: 140px;
+      }
+      .button4{
+        color:rgb(161, 108, 42);
+        padding: 10px;
+        font-size:3vh;
+        width:120px;
+        border: none;
+        background-color:white;
+    }
+    .button4:hover{
+        background-color: rgb(212, 158, 93);
+       
+    }
+    .circle-button {
+        background-color: rgb(212, 158, 93); /* Yellow color */
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      
+      .arrow-up {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff; /* White color for the arrow */
+      }
+      
+      @media only screen and (max-width:780px) {
+        body{
+            background-color: #ccc;
+        }
+        .aboutus{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8gPCpF_IWc3O0_ryiJkQf8dLesbmOmiIg0-CKH1lAMbQXmfS6dWa3ut8dOco4rzm16c&usqp=CAU");
+            height: 250px;
+            margin-top:92px;
+            width: 100%;
+            display: inline-block;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position:center;
+            
+        }
+ 
+    .circle-button {
+        background-color: rgb(212, 158, 93); /* Yellow color */
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      
+      .arrow-up {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff; /* White color for the arrow */
+      }
+      }
+      @media only screen and (max-width:580px) {
+        body{
+            background-color: #ccc;
+        }
+        .aboutus{
+            background-image: url("https://www.ingridkuhn.com/themes/woof!/img/jumbotron.jpg");
+            height: 250px;
+            margin-top:92px;
+            width: 100%;
+            display: inline-block;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position:center;
+            
+        }
+    
+      }

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=" stylesheet" a href="donatenow.css">
+    <link rel="icon" type="image/x/icon" href="C:\Users\HP\vs code sem1\UrMatch1.jpg">
+    <script src="https://kit.fontawesome.com/92cd45eade.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x/icon" href="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-09-01 200310.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/92cd45eade.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+  
+<style>
+  .ty{
+    background-image: url("https://townsquare.media/site/33/files/2015/04/Golden-Retreiver-Puppy.jpg");
+        height: 100%;
+        
+        width: 100%;
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        background-position:center;
+  }
+.container {
+  position: relative;
+  width: 470px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px; 
+  margin-left: 770px; 
+  
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.secure-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: green;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.button1 {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+ 
+}
+.button3:hover, .button2:hover, .button4:hover, .button5:hover {
+  
+  border: 1px solid #b2adad;
+ 
+  cursor: pointer;
+  background-color: #e7e0e0ed;
+ 
+}
+
+.button2 {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+  width: 218px;
+}
+.button3 {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+  width: 218px;
+}
+.button4 {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  width: 218px;
+  margin-bottom: 15px;
+}
+.button5 {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  width: 218px;
+  margin-bottom: 15px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.button1:hover{
+  
+  border: 1px solid #760e6c;
+ 
+  background-color: rgb(234, 170, 222);
+  
+}
+
+.other-option {
+  
+  padding: 10px;
+  
+  border-radius: 5px;
+  
+  text-align: center;
+  opacity: 0.6;
+  color: #2b2929;
+}
+
+.other-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+}
+
+.powered-by {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.powered-by img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+@media only screen and (max-width:780px) {
+  body{
+   
+    background-image: url("https://townsquare.media/site/33/files/2015/04/Golden-Retreiver-Puppy.jpg");
+        height: 100%;
+        
+        width: 100%;
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        background-position:center;
+  
+  }}
+</style>
+  </head>
+    <body>
+
+      <div id="navbar"></div>
+
+      <br><br><br>
+
+
+    
+                <div class="ty">
+                <div class="container">
+                  <div class="title">Choose amount</div>
+                  <br>
+                  <div class="secure-icon">
+                  <button type="button" class="btn btn-success">&#10004; Secure</button>
+                  </div>
+                  
+                  <div class="button-container">
+                    <button class="button button1">One-time</button>
+                    <button class="button button1">Monthly</button>
+                    <button class="button button1">Quarterly</button>
+                    <button class="button button1">Yearly</button>
+                  </div><br>
+                  <div class="options">
+                    <button class="button button2" class="optionrt">
+                      $10
+                      <br>
+                      Fully vaccinates a puppy
+                    </button>
+                    <button class="button button3" class="optionrt">
+                      $25
+                      <br>
+                      Neuters a dog
+                    </button>
+                    <button class="button button4" class="optionrt">
+                      $50
+                      <br>
+                      Feeds a rescue for 10 days
+                    </button>
+                    <button class="button5" class="optionrt">
+                      $100
+                      <br>
+                      covers surgeries for hit an run victims
+                    </button>
+                  </div>
+                  <div class="other-option">
+                    <pre><input type="text" class="other-input" placeholder="$ Other                                    USD " style="font-size: medium;" ></pre>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" class="checkbox">
+                    <label for="note-comment" class="checkbox-label">Add note/comment</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" class="checkbox">
+                    <label for="honor-memory" class="checkbox-label">Give in honor/memory</label>
+                  </div>
+                  <div class="powered-by">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc4v7ewa5tqLbWMULJ6Cv1PL8ftA-HEL7_gw&s" alt="Givebutter">
+                    Powered by Givebutter
+                  </div>
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button" style="width: 230px; text-align: center; ">Continue</button>
+                  </div>
+                </div></div>
+      <br><br>
+          <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\donate page\donatenow.html"><img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-09-02 100113.png" alt="u" height="550px" width="100%"></a>
+                
+
+                <div class="sym" style=" background-color: rgb(32, 31, 31); height: 290px;display: flex; justify-content:space-around;">
+                  <div class="c" style="margin-left: 40px;">
+                    <img src="c:\Users\HP\Downloads\love.png" alt="" height="48px" width="48px" style="display: inline-block; margin-bottom: 15px;">
+                    <h1 style="color: aliceblue; display: inline-block; font-size: 7vh;margin-top: 40px;"> Helping Hands!</h1>
+                    <h6 style="color: rgb(209, 156, 91); margin-left: 50px;">Whether you’re looking to adopt, foster, or just have a question,</h6>
+                    <h6 style="color: rgb(209, 156, 91);margin-left: 50px;">contact us today. We’re here to assist you with any inquiries.</h6>
+                    <h6 style="color: rgb(209, 156, 91);margin-left: 50px;">Connect with us for more information on our adoption process.</h6>
+              
+                  </div>
+                  
+                  
+                  <div class="a" style="margin-top: 60px; margin-left: 140px;">
+                    <i class="fa-solid fa-envelope fa-lg" style="color: rgb(255, 255, 255); display: inline-block;"></i>&nbsp;
+                    <h5 style="color: aliceblue; display: inline-block;">Contact Us</h5>
+                    <h5 style="color: rgb(209, 156, 91);font-family:Georgia, 'Times New Roman', Times, serif;">351-352-9615</h5>
+                    <h6 style="color: rgb(209, 156, 91);font-family:Georgia, 'Times New Roman', Times, serif;">helpinghands@gmail.com</h5>
+                    <h6 style=" font-family:Georgia, 'Times New Roman', Times, serif; color:rgb(209, 156, 91);">Pet Street, Sector 38, CHD</h5>
+                  
+                  </div>
+                  <div class="b" style="margin-top: 60px;">
+                    <!-- <img src="c:\Users\HP\Downloads\placeholder (3).png" alt="c" > -->
+                    <i class="fa-regular fa-clock fa-lg" style="color: rgb(255, 255, 255); display: inline-block;"></i>&nbsp;
+                          <h5 style="color: aliceblue; display: inline-block;">Working Hours</h5>
+                        <h6 style="color: rgb(209, 156, 91);font-family:Georgia, 'Times New Roman', Times, serif;">Open 8am - 10pm</h5>
+                        <h6 style="color: rgb(209, 156, 91);font-family:Georgia, 'Times New Roman', Times, serif;">Holidays- Closed</h5>
+                        <h6 style="color: rgb(209, 156, 91);font-family:Georgia, 'Times New Roman', Times, serif;">Weekends- Closed</h5>
+              
+                  </div>
+                  <div style="margin-top: 220px; text-align: end ;">
+                    <a class="circle-button" href="#" role="button"><span class="arrow-up"></span></a>
+              
+                  </div>
+              
+                  </div>
+              
+              </div>
+    
+
+              <script>
+                // Create the navbar container
+                let nav = document.createElement('nav');
+                nav.className = 'navbar navbar-expand-lg bg-body-tertiary';
+                nav.style.position = 'fixed';
+                nav.style.width = '100%';
+                nav.style.padding = '0%';
+                nav.style.opacity = '0.95';
+              
+                // Create the div for the logo
+                let div1 = document.createElement('div');
+                div1.className = 'div1';
+              
+                let logoLink = document.createElement('a');
+                logoLink.href = 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\index.html';
+                
+                let logoImg = document.createElement('img');
+                logoImg.src = 'c:\\Users\\HP\\Pictures\\Screenshots\\Screenshot 2024-09-01 200310.png';
+                logoImg.height = 92;
+                logoImg.width = 200;
+              
+                logoLink.appendChild(logoImg);
+                div1.appendChild(logoLink);
+                nav.appendChild(div1);
+              
+                // Create the container-fluid div
+                let container = document.createElement('div');
+                container.className = 'container-fluid';
+              
+                // Create the navbar toggler button
+                let button = document.createElement('button');
+                button.className = 'navbar-toggler';
+                button.type = 'button';
+                button.setAttribute('data-bs-toggle', 'collapse');
+                button.setAttribute('data-bs-target', '#navbarSupportedContent');
+                button.setAttribute('aria-controls', 'navbarSupportedContent');
+                button.setAttribute('aria-expanded', 'false');
+                button.setAttribute('aria-label', 'Toggle navigation');
+                
+                let span = document.createElement('span');
+                span.className = 'navbar-toggler-icon';
+                button.appendChild(span);
+                container.appendChild(button);
+              
+                // Create the collapsible navbar
+                let collapseDiv = document.createElement('div');
+                collapseDiv.className = 'collapse navbar-collapse';
+                collapseDiv.id = 'navbarSupportedContent';
+              
+                let ul = document.createElement('ul');
+                ul.className = 'navbar-nav me-auto mb-2 mb-lg-0';
+                ul.style.fontSize = 'large';
+              
+                // Array of nav items
+                let navItems = [
+                  { name: 'Home', link: 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\index.html' },
+                  { name: 'About', link: 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\about page\\aboutpage.html' },
+                  { name: 'Get Involved', link: 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\involve page\\involve.html' },
+                  { name: 'Contact', link: 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\contactus\\contactus.html' },
+                  { name: 'Pet Goods', link: 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\ecommercepage\\ecommercepage.html' },
+                ];
+              
+                // Create each nav item
+                navItems.forEach(item => {
+                  let li = document.createElement('li');
+                  li.className = 'nav-item';
+                  li.style.margin = '0 4px';
+                  
+                  let a = document.createElement('a');
+                  a.className = 'nav-link active';
+                  a.href = item.link;
+                  a.textContent = item.name;
+                  
+                  li.appendChild(a);
+                  ul.appendChild(li);
+                });
+              
+                // Add dropdown for Find Your Pet
+                let dropdownLi = document.createElement('li');
+                dropdownLi.className = 'nav-item dropdown';
+                dropdownLi.style.margin = '0 4px';
+                
+                let dropdownLink = document.createElement('a');
+                dropdownLink.className = 'nav-link dropdown-toggle';
+                dropdownLink.href = '#';
+                dropdownLink.setAttribute('role', 'button');
+                dropdownLink.setAttribute('data-bs-toggle', 'dropdown');
+                dropdownLink.setAttribute('aria-expanded', 'false');
+                dropdownLink.textContent = 'Find Your Pet';
+                
+                let dropdownMenu = document.createElement('ul');
+                dropdownMenu.className = 'dropdown-menu';
+              
+                let dropdownItems = [
+                  { name: 'Dogs', link: 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\adoptionpagedogs\\adoptionpage.html' },
+                  { name: 'Cats', link: 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\adoptcats\\adoptcat.html' },
+                  { name: 'Others', link: 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\adoptcats\\adoptcat.html' }
+                ];
+              
+                dropdownItems.forEach(item => {
+                  let dropdownLi = document.createElement('li');
+                  let dropdownA = document.createElement('a');
+                  dropdownA.className = 'dropdown-item';
+                  dropdownA.href = item.link;
+                  dropdownA.textContent = item.name;
+                  dropdownLi.appendChild(dropdownA);
+                  dropdownMenu.appendChild(dropdownLi);
+                });
+              
+                dropdownLi.appendChild(dropdownLink);
+                dropdownLi.appendChild(dropdownMenu);
+                ul.appendChild(dropdownLi);
+              
+                // Add Donate button
+                let donateLi = document.createElement('li');
+                donateLi.className = 'nav-item';
+                donateLi.style.margin = '0 4px';
+                donateLi.style.marginLeft = '344px';
+              
+                let donateButton = document.createElement('a');
+                donateButton.className = 'btn btn-outline-success';
+                donateButton.href = 'C:\\Users\\HP\\Desktop\\FEE2 SEM3\\project sem3\\donate page\\donatenow.html';
+                donateButton.role = 'button';
+                donateButton.style.textDecoration = 'none';
+                donateButton.textContent = 'Donate';
+              
+                donateLi.appendChild(donateButton);
+                ul.appendChild(donateLi);
+              
+                // Append the navbar to the page
+                collapseDiv.appendChild(ul);
+                container.appendChild(collapseDiv);
+                nav.appendChild(container);
+                document.getElementById('navbar').appendChild(nav);
+              </script>
+              
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-mksmAuh1ygwVZWYk5yXqzgdeIX9Yrktxd6Cgicwbzt5fP5DVp+S0P0klLYt+TBZ6" crossorigin="anonymous"></script>
+              
+</body>
+</html>

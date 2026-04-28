@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="ecommercepage.css" />
+  </head>
+  <body>
+    <div>
+        <br>
+        
+    <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\index.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">HOME</a>
+        <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\about page\aboutpage.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">About</a>
+        <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\involve page\involve.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">Get Involved</a>
+        <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\contactus\contactus.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">Contact</a>
+        <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\ecommercepage\ecommercepage.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">Pet Goods</a>
+    </div><br>
+    <div class="wrapper" style="margin: 0%; display: inline-block;">
+      <div id="search-container" >
+        <input type="search" id="search-input" placeholder="Search product name here.."/>
+        <button id="search">Search</button>
+        
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Food')">
+            Food
+        </button>
+        <button class="button-value" onclick="filterProduct('Treats')">
+            Treats
+        </button>
+        <button class="button-value" onclick="filterProduct('Toys')">
+          Toys
+        </button>
+        
+      </div>
+      <div id="products"></div>
+    </div>
+   
+    <!-- Script -->
+    <script>
+        let products = {
+  data: [
+    {
+      productName: "Pedigree Chicken",
+      category: "Food",
+      price: "₹4,050.00",
+      image: "https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/6/1/61lfcb5ngql._sl1000_.jpg",
+    },
+    {
+      productName: "Goat Goodness",
+      category: "Food",
+      Quantity:"Cat Food 85 gm",
+      price: "₹142.00",
+      image: "https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/i/m/img_6529.png",
+    },
+    {
+      productName: "Pedigree Pack (Veg)",
+      category: "Food",
+      price: "₹807.00",
+      image: "https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/p/e/pedigree_vegetarian_puppy_adult_dry_food-2.8kg.jpg",
+    },
+    {
+      productName: "Scallop Broth Cat Treat(Non-Veg)",
+      category: "Treats",
+      price: "₹185.00",
+      image: "https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/i/m/img_9315_copy_1.jpg",
+    },
+    {
+      productName: "Scallop Broth Cat Treat(Non-Veg)",
+      category: "Treats",
+      price: "₹185.00",
+      image: "https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/u/s/usa502a.jpg",
+    },
+    {
+      productName: "Kitty Licks Tuna Cat Treat",
+      category: "Treats",
+      price: "₹790.00",
+      image: "https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/2/7/27_669x669_a5158a65-6d86-4ec1-b039-134f807bdfe7_1020x.progressive.jpg",
+    },
+    {
+      productName: "Orka Bone Dog Toy",
+      category: "Toys",
+      price: "₹743.00",
+      image: "https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/8/1/81yxbc6ferl._sl1500__1.jpg",
+    },
+    {
+      productName: "Junior Mint Tuff Balls",
+      category: "Toys",
+      price: "₹276.00",
+      image: "https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/7/0/70013_1_1.jpg",
+    },
+    {
+      productName: "Mushroom Cat Toy",
+      category: "Toys",
+      price: "₹199.00",
+      image: "https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/o/t/otrnf14995.jpg",
+    },
+  ],
+};
+
+for (let i of products.data) {
+  //Create Card
+  let card = document.createElement("div");
+  //Card should have category and should stay hidden initially
+  card.classList.add("card", i.category, "hide");
+  //image div
+  let imgContainer = document.createElement("div");
+  imgContainer.classList.add("image-container");
+  //img tag
+  let image = document.createElement("img");
+  image.setAttribute("src", i.image);
+  imgContainer.appendChild(image);
+  card.appendChild(imgContainer);
+  //container
+  let container = document.createElement("div");
+  container.classList.add("container");
+  //product name
+  let name = document.createElement("h5");
+  name.classList.add("product-name");
+  name.innerText = i.productName.toUpperCase();
+  container.appendChild(name);
+  //price
+  let price = document.createElement("h6");
+  price.innerText = "$" + i.price;
+  container.appendChild(price);
+
+  card.appendChild(container);
+  document.getElementById("products").appendChild(card);
+}
+
+//parameter passed from button (Parameter same as category)
+function filterProduct(value) {
+  //Button class code
+  let buttons = document.querySelectorAll(".button-value");
+  buttons.forEach((button) => {
+    //check if value equals innerText
+    if (value.toUpperCase() == button.innerText.toUpperCase()) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+  });
+
+  //select all cards
+  let elements = document.querySelectorAll(".card");
+  //loop through all cards
+  elements.forEach((element) => {
+    //display all cards on 'all' button click
+    if (value == "all") {
+      element.classList.remove("hide");
+    } else {
+      //Check if element contains category class
+      if (element.classList.contains(value)) {
+        //display element based on category
+        element.classList.remove("hide");
+      } else {
+        //hide other elements
+        element.classList.add("hide");
+      }
+    }
+  });
+}
+
+//Search button click
+document.getElementById("search").addEventListener("click", () => {
+  //initializations
+  let searchInput = document.getElementById("search-input").value;
+  let elements = document.querySelectorAll(".product-name");
+  let cards = document.querySelectorAll(".card");
+
+  //loop through all elements
+  elements.forEach((element, index) => {
+    //check if text includes the search value
+    if (element.innerText.includes(searchInput.toUpperCase())) {
+      //display matching card
+      cards[index].classList.remove("hide");
+    } else {
+      //hide others
+      cards[index].classList.add("hide");
+    }
+  });
+});
+
+//Initially display all products
+window.onload = () => {
+  filterProduct("all");
+};
+    </script>
+  </body>
+</html>

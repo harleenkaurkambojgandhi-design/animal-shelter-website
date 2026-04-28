@@ -1,0 +1,232 @@
+.aboutus{
+    background-image: url("https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/pet-12-1.jpg");
+    height: 470px;
+    margin-top:92px;
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 100% 30%;
+    border-bottom-left-radius: 1% 1%;
+    background-position:center;
+    opacity: 0.87;
+}
+
+.button1{
+    background-color: rgb(212, 146, 66);
+    border-radius: 40px;
+    color: aliceblue;
+    padding: 20px;
+    font-size:3vh;
+    width:232px;
+    border: none;
+    opacity: 0.92;
+    
+}
+.button1:hover{
+background-color: rgb(173, 113, 40);
+border-color: rgb(173, 113, 40);
+}
+.button2{
+border: none;
+background-color: rgb(128, 125, 125);
+border-radius:40px;
+color: aliceblue;
+padding: 20px;
+font-size:3vh;
+width:232px;
+opacity: 0.85;
+}
+.button2:hover{
+background-color: rgb(212, 146, 66);
+border-color: rgb(212, 146, 66);
+opacity: 0.9;
+}
+
+.newslett{
+    background-image: linear-gradient(to bottom, rgba(35, 33, 33, 0.995) 2%, rgba(219, 219, 224, 0.201)), url("https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/pet-20.jpg");
+
+    height: 750px;
+    padding:40px;
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 100% 20%;
+    border-top-left-radius: 1% 1%;
+    background-position:center;
+    
+    
+  }
+  .button5{
+    background-color: rgb(212, 146, 66);
+    border-radius: 40px;
+    color: aliceblue;
+    padding: 18px;
+    font-size:3vh;
+    width:440px;
+    border: none;
+    opacity: 0.8;
+    
+}
+.button5:hover{
+background-color: rgb(173, 113, 40);
+border-color: rgb(173, 113, 40);
+}
+.id{
+input[type="text"]{
+	
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #898787;
+    opacity: 0.7;
+    width:440px;
+    border-radius:40px;
+}
+}
+.formerror {
+    color: red;
+}
+.volun1{
+    width: 500px;
+    height: 585px;
+    text-align: left;
+    background-color: rgb(36, 34, 34);
+    color: aliceblue;
+    padding: 35px;
+    margin-left: 120px;
+    
+    padding-top:86px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+  }
+
+
+  .vol{
+    width: 500px;
+    height: 240px;
+  }
+  .v{
+    width: 450px;
+    height: 60px;
+    background-color: white;
+    color: rgb(40, 41, 41);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  }
+  
+  .button4{
+    background-color: rgb(209, 145, 68);
+    border-radius: 40px;
+    color: aliceblue;
+    padding: 16.5px;
+    font-size:2.6vh;
+    width:136px;
+    border: none;
+    
+}
+.button4:hover{
+    background-color: rgb(173, 113, 40);
+   
+}
+.button3{
+    background-color: rgb(209, 145, 68);
+    border-radius: 40px;
+    color: aliceblue;
+    padding: 16.5px;
+    font-size:2.6vh;
+    width:175px;
+    border: none;
+    
+}
+.button3:hover{
+    background-color: rgb(173, 113, 40);
+   
+}
+.volun11{
+    width: 500px;
+    height: 600px;
+    text-align: left;
+    background-color: rgb(212, 158, 93);
+    color: aliceblue;
+    padding: 35px;
+    padding-top:85px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   margin-right: 139px;
+   margin-bottom: 300px;
+    
+  }
+  
+
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+input[type="text"],input[type="email"],select {
+    width: 430px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 430px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    height: 100px;
+}
+
+
+@media only screen and (max-width:800px) {
+    .aboutus{
+        background-image: url("https://www.shutterstock.com/image-photo/black-cat-window-waiting-his-600nw-2028403658.jpg");
+        height: 470px;
+        margin-top:92px;
+        width: 100%;
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-bottom-right-radius: 100% 30%;
+        border-bottom-left-radius: 1% 1%;
+        background-position:center;
+        opacity: 0.87;
+    }
+    
+
+}
+
+@media only screen and (max-width:580px) {
+    .aboutus{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBtJO24iWY_U0KFszj4QxmDoripC4LjYr-zHFWVpXCtA8vPvARnX8O7qzbD5ACj1PBszE&usqp=CAU");
+        height: 470px;
+        margin-top:92px;
+        width: 580px;
+        display: inline-block;
+        background-size: cover;
+        
+        border-bottom-right-radius: 100% 30%;
+        border-bottom-left-radius: 1% 1%;
+        background-position:center;
+        opacity: 0.87;
+    }
+    
+        
+    
+    
+
+}

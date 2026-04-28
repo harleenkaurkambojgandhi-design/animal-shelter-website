@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="get_std.css" />
+  </head>
+  <body>
+    <div>
+        <br>
+        
+    <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\index.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">HOME</a>
+        <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\about page\aboutpage.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">About</a>
+        <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\involve page\involve.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">Get Involved</a>
+        <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\contactus\contactus.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">Contact</a>
+        <a href="C:\Users\HP\Desktop\FEE2 SEM3\project sem3\ecommercepage\ecommercepage.html" class="btn" style="text-decoration: none; color: white; background-color: #5e26d5; padding: 10px 20px; border-radius: 5px;">Pet Goods</a>
+    </div><br>
+    <div class="wrapper" style="margin: 0%; display: inline-block;">
+      <div id="search-container" >
+        <input type="search" id="search-input" placeholder="Search product name here.."/>
+        <button id="search">Search</button>
+        
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Puppy')">
+            Puppy
+        </button>
+        <button class="button-value" onclick="filterProduct('Young')">
+            Young
+        </button>
+        <button class="button-value" onclick="filterProduct('Adult')">
+            Adult
+        </button>
+        <button class="button-value" onclick="filterProduct('Senior')">
+            Senior
+        </button>
+        
+      </div>
+      <div id="products"></div>
+    </div>
+   
+    <!-- Script -->
+    <script>
+        let products = {
+  data: [
+    {
+      productName: "Joanne",
+      category: "Adult",
+      Gender: "Male",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7o2yrr0VwuNQhzVPtqLsSYb3l-pfaJgYne8I-gCLllccYhHTo_YB3Bric5RYr6j7jJ8&usqp=CAU",
+    },
+    {
+      productName: "Jack",
+      category: "Young",
+      Gender: "Male",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxl4FYrJNSw2uaLqH0BoeNaOlb6KJYjupzIw&s",
+    },
+    {
+      productName: "Kavy",
+      category: "Puppy",
+      Gender: "Female",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsXcZfKLsYl_i1ZhwxEbVeR07PQP2D2wACWw&s",
+    },
+    {
+      productName: "Zeoy",
+      category: "Young",
+      Gender: "Male",
+      image: "https://res.cloudinary.com/petrescue/image/upload/b_auto:predominant,f_auto,c_pad,h_638,w_638/v1711394066/mwmshsisakoobjma9abr.jpg",
+    },
+    {
+      productName: "Oreo",
+      category: "Young",
+      Gender: "Female",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzaOf2_n0OQihKCLteOj4T1lqnOnFbraC1NPNL_nkMYsgIgN1kExqOQxM5MsRCsjV5jjY&usqp=CAU",
+    },
+    {
+      productName: "Pery",
+      category: "Adult",
+      Gender: "Male",
+      image: "https://sl-prod-v2-cdn.shelterluv.com/sites/default/files/animal_pics/45923/2024/09/24/08/20240924085751.png",
+    },
+    {
+      productName: "Charlie",
+      category: "Puppy",
+      Gender: "Female",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7o2yrr0VwuNQhzVPtqLsSYb3l-pfaJgYne8I-gCLllccYhHTo_YB3Bric5RYr6j7jJ8&usqp=CAU",
+    },
+    {
+      productName: "Lammy",
+      category: "Senior",
+      Gender: "Male",
+      image: "https://www.peaceofminddogrescue.org/images/misc/homepage/adopt.jpg",
+    },
+    {
+      productName: "Toyye",
+      category: "Senior",
+      Gender: "Female",
+      image: "https://res.cloudinary.com/petrescue/image/upload/a_0/c_crop,w_841,h_841,x_9,y_2/c_fill,w_638,h_638/v1694743836/ouyvfrumdajqizmk8jeu.jpg",
+    },
+  ],
+};
+
+for (let i of products.data) {
+  //Create Card
+  let card = document.createElement("div");
+  //Card should have category and should stay hidden initially
+  card.classList.add("card", i.category, "hide");
+  //image div
+  let imgContainer = document.createElement("div");
+  imgContainer.classList.add("image-container");
+  //img tag
+  let image = document.createElement("img");
+  image.setAttribute("src", i.image);
+  imgContainer.appendChild(image);
+  card.appendChild(imgContainer);
+  //container
+  let container = document.createElement("div");
+  container.classList.add("container");
+  //product name
+  let name = document.createElement("h5");
+  name.classList.add("product-name");
+  name.innerText = i.productName.toUpperCase();
+  container.appendChild(name);
+  //  Gender
+  let    Gender = document.createElement("h6");
+  Gender.innerText = "$" + i.Gender;
+  container.appendChild(Gender);
+
+  card.appendChild(container);
+  document.getElementById("products").appendChild(card);
+}
+
+//parameter passed from button (Parameter same as category)
+function filterProduct(value) {
+  //Button class code
+  let buttons = document.querySelectorAll(".button-value");
+  buttons.forEach((button) => {
+    //check if value equals innerText
+    if (value.toUpperCase() == button.innerText.toUpperCase()) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+  });
+
+  //select all cards
+  let elements = document.querySelectorAll(".card");
+  //loop through all cards
+  elements.forEach((element) => {
+    //display all cards on 'all' button click
+    if (value == "all") {
+      element.classList.remove("hide");
+    } else {
+      //Check if element contains category class
+      if (element.classList.contains(value)) {
+        //display element based on category
+        element.classList.remove("hide");
+      } else {
+        //hide other elements
+        element.classList.add("hide");
+      }
+    }
+  });
+}
+
+//Search button click
+document.getElementById("search").addEventListener("click", () => {
+  //initializations
+  let searchInput = document.getElementById("search-input").value;
+  let elements = document.querySelectorAll(".product-name");
+  let cards = document.querySelectorAll(".card");
+
+  //loop through all elements
+  elements.forEach((element, index) => {
+    //check if text includes the search value
+    if (element.innerText.includes(searchInput.toUpperCase())) {
+      //display matching card
+      cards[index].classList.remove("hide");
+    } else {
+      //hide others
+      cards[index].classList.add("hide");
+    }
+  });
+});
+
+//Initially display all products
+window.onload = () => {
+  filterProduct("all");
+};
+    </script>
+  </body>
+</html>
