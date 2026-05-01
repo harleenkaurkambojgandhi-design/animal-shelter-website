@@ -49,13 +49,17 @@ Animal shelters often struggle with:
 The **Home Page** serves as the emotional and functional gateway to the **Helping Hands** non-profit animal shelter website. Its design and content work together to create a warm, action-oriented first impression that encourages visitors to engage, adopt, or donate.
 
 
+
 <img width="1879" height="823" alt="Screenshot 2026-05-01 100813" src="https://github.com/user-attachments/assets/21887de6-83eb-49df-bc32-abc4a6f8c7e1" />
+
 
 
 <img width="1883" height="877" alt="Screenshot 2026-05-01 100940" src="https://github.com/user-attachments/assets/b11aef02-cef6-4da1-8bd8-7a4074d8d37a" />
 
 
+
 <img width="1872" height="882" alt="Screenshot 2026-05-01 101001" src="https://github.com/user-attachments/assets/298f77d5-24aa-427e-bf68-bfddf3da0924" />
+
 
 
 ---
@@ -135,13 +139,17 @@ The homepage balances **compassion with clarity** — designed to convert casual
 Provides information about the mission, vision, and purpose of HelpingHands.  
 
 
+
 <img width="1879" height="884" alt="Screenshot 2026-05-01 105253" src="https://github.com/user-attachments/assets/07299b28-180c-4341-8f88-b42beb5d4bb7" />
+
 
 
 <img width="1567" height="689" alt="Screenshot 2026-05-01 105327" src="https://github.com/user-attachments/assets/764ab1e7-27b8-4efa-bb5e-408ebde96c95" />
 
 
+
 <img width="1646" height="873" alt="Screenshot 2026-05-01 105412" src="https://github.com/user-attachments/assets/263be188-dc97-40e3-ac05-c6e9e1473c3f" />
+
 
 
 ## Our Mission
@@ -184,13 +192,17 @@ Provides information about the mission, vision, and purpose of HelpingHands.
 Users can explore and find pets based on preferences like age, breed, type, size, gender, and more.
 
 
+
 <img width="1508" height="882" alt="Screenshot 2026-05-01 110512" src="https://github.com/user-attachments/assets/ce3fa39d-1362-437e-9665-919298d9f01f" />
+
 
 
 <img width="1555" height="879" alt="Screenshot 2026-05-01 110539" src="https://github.com/user-attachments/assets/b7d5c3be-f335-4ac0-bf58-45bb4c2c0190" />
 
 
+
 <img width="767" height="429" alt="image" src="https://github.com/user-attachments/assets/d9a08426-c897-491a-9f02-ac084fddcc76" />
+
 
 
 ---
@@ -250,7 +262,10 @@ Users can explore and find pets based on preferences like age, breed, type, size
 ### 🔍 Search Your Pet – Smart Search Feature
 Allows users to quickly search pets using keywords and filters.  
 
+
+
 <img width="1572" height="819" alt="Screenshot 2026-05-01 111156" src="https://github.com/user-attachments/assets/5bac2d91-f615-4aae-8442-6573c8e465a0" />
+
 
 
 ---
@@ -298,10 +313,13 @@ Allows users to quickly search pets using keywords and filters.
 Encourages users to volunteer, participate in events, or contribute to the shelter.  
 
 
+
 <img width="1647" height="703" alt="Screenshot 2026-05-01 111445" src="https://github.com/user-attachments/assets/7ee7903b-988f-4d7d-b0c8-fbe123e9cc64" />
 
 
+
 <img width="938" height="424" alt="image" src="https://github.com/user-attachments/assets/1a58871e-874a-4856-8b29-cb8ccaca586b" />
+
 
 
 ---
@@ -369,7 +387,9 @@ Encourages users to volunteer, participate in events, or contribute to the shelt
 Simple interface for users to contribute donations for animal welfare.  
 
 
+
 <img width="1817" height="874" alt="Screenshot 2026-05-01 112044" src="https://github.com/user-attachments/assets/627067b0-df57-406d-a44f-dba478ffa512" />
+
 
 
 ---
@@ -406,10 +426,13 @@ Simple interface for users to contribute donations for animal welfare.
 Includes form validation and allows users to connect or volunteer.  
 
 
+
 <img width="1801" height="874" alt="Screenshot 2026-05-01 112350" src="https://github.com/user-attachments/assets/15a4bcda-3ed9-4f0f-905c-346c53bd010f" />
 
 
+
 <img width="1890" height="870" alt="Screenshot 2026-05-01 112407" src="https://github.com/user-attachments/assets/ae9fd8cd-f917-44d6-bc73-1c53d2402c6b" />
+
 
 
 ---
@@ -458,7 +481,9 @@ Near Shivaji College & Delhi Home Guards Head Office, Shivaji Enclave, Raja Gard
 Displays grooming products and pet essentials with pricing and descriptions.  
 
 
+
 <img width="914" height="498" alt="image" src="https://github.com/user-attachments/assets/81cdfafd-9480-4f6f-8ab0-a9658cf594d9" />
+
 
 
 ---
