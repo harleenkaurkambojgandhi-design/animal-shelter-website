@@ -10,7 +10,7 @@ A modern, responsive web platform designed to support animal shelters in **pet a
 ---
 
 ## 🌐 Live Demo
-👉 [https://your-project-name.netlify.app](https://animal-shelter-helpinghands.netlify.app/about_page/aboutpage)  
+👉 [https://animal-shelter.netlify.app](https://animal-shelter-helpinghands.netlify.app/about_page/aboutpage)  
 
 ---
 
